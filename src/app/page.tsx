@@ -16,12 +16,13 @@ import {
   useTransform,
   useInView,
   AnimatePresence,
+  Variants,
 } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { link } from "fs";
 
 // Animation variants
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: {
     opacity: 0,
     y: 60,
@@ -38,7 +39,7 @@ const fadeInUp = {
   },
 };
 
-const staggerContainer = {
+const staggerContainer: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -49,7 +50,7 @@ const staggerContainer = {
   },
 };
 
-const slideInLeft = {
+const slideInLeft: Variants = {
   hidden: {
     opacity: 0,
     x: -100,
@@ -66,7 +67,7 @@ const slideInLeft = {
   },
 };
 
-const slideInRight = {
+const slideInRight: Variants = {
   hidden: {
     opacity: 0,
     x: 100,
@@ -83,7 +84,7 @@ const slideInRight = {
   },
 };
 
-const scaleIn = {
+const scaleIn: Variants = {
   hidden: {
     opacity: 0,
     scale: 0.8,
@@ -100,7 +101,7 @@ const scaleIn = {
   },
 };
 
-const skillCardVariants = {
+const skillCardVariants: Variants = {
   hidden: {
     opacity: 0,
     y: 50,
